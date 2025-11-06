@@ -5,6 +5,9 @@
 *.tfstate
 *.tfstate.*
 
+
+.terraform.lock.hcl
+
 # access key
 sa-key.json
 *.pem
