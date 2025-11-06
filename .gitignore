@@ -5,6 +5,10 @@
 *.tfstate
 *.tfstate.*
 
+# access key
+sa-key.json
+*.pem
+
 # Crash log files
 crash.log
 crash.*.log
