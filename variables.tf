@@ -1,3 +1,5 @@
+#Yandex vars
+
 variable "cloud_name" {
   type        = string
   sensitive   = true
@@ -36,4 +38,31 @@ variable "terraform_sa_id" {
 variable "zone_1_a" {
   type        = string
   description = "Default zone"
+}
+
+#Contabo vars
+
+variable "contabo_client_id" {
+  type        = string
+  description = "Contabo API Client ID"
+  sensitive   = true
+}
+
+variable "contabo_client_secret" {
+  type        = string
+  description = "Contabo API Client Secret"
+  sensitive   = true
+}
+
+
+variable "contabo_user" {
+  type        = string
+  description = "Contabo account email"
+  sensitive   = true
+}
+
+variable "contabo_password" {
+  type        = string
+  description = "Contabo account password"
+  sensitive   = true
 }
