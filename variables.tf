@@ -1,17 +1,39 @@
+variable "cloud_name" {
+  type        = string
+  sensitive   = true
+  description = "Cloud name Organization"
+}
+
 variable "cloud_id" {
   type    = string
-  default = "b1gqmd9qufsg490ga43h"
+  sensitive   = true
   description = "Cloud infra-cloud ID"
 }
 
-variable "folder_id" {
+variable "catalog_name" {
   type        = string
-  default     = "b1gj58ckj9gn47utmcsg"
-  description = "Folder ID is Catalog network-infrastructure in infra-cloud ID"
+  sensitive   = true
+  description = "Catalog name in infra-cloud"
 }
 
-#variable "access_key" {
-#  type        = string
-#  default     = "sa-key.json"
-#  description = "Public and secret, key set, file dir"
-#}
+variable "catalog_id" {
+  type        = string
+  sensitive   = true
+  description = "Catalog ID in infra-cloud"
+}
+
+variable "terraform_sa_name" {
+  type        = string
+  description = "Terraform Service Account name"
+}
+
+variable "terraform_sa_id" {
+  type        = string
+  sensitive   = true
+  description = "Terraform Service Account ID"
+}
+
+variable "zone_1_a" {
+  type        = string
+  description = "Default zone"
+}

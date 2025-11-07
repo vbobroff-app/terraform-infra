@@ -8,11 +8,11 @@ init:
 	@echo "🚀 Initializing Terraform..."
 	terraform init
 
-plan: init
+plan:
 	@echo "📋 Generating plan..."
 	terraform plan
 
-apply: init
+apply:
 	@echo "🛠 Applying configuration..."
 	terraform apply
 
@@ -29,6 +29,10 @@ validate: init
 	terraform validate
 
 output:
+	@echo "📤 Printing outputs..."
+	terraform output
+
+show:
 	@echo "📤 Showing outputs..."
 	terraform output
 
@@ -41,5 +45,6 @@ reinit: clean init
 	@echo "🔄 Complete reinitialization done!"
 
 # Быстрое применение без лишних вопросов
-auto-apply: init
+auto-apply:
+	@echo "🛠 Applying configuration (approve yes) ..."
 	terraform apply -auto-approve

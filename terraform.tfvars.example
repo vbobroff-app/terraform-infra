@@ -1,0 +1,43 @@
+# terraform.tfvars.example
+
+# Yandex Cloud Configuration in Organization
+#Cloud
+cloud_name    = "waw-name" 
+infra-cloud_id    = "b1gqmd9qufsg490ga43h"
+
+#Catalog
+catalog_name    = "catalog-waw-name"
+catalog_id   = "b1gj58ckj9gn47utmcsg"
+
+#zones
+zone_1_a      = "ru-central1-a"
+
+# Service Account for Terraform
+terraform_sa_name  = "terraform-sa"
+terraform_sa_id    = "aje6mbo47g6ofmpcm5q4"
+
+# Service Account for Terraform
+terraform_sa_name  = "terraform-sa"
+terraform_sa_id    = "ajesaj123exampleid"
+
+# Network Configuration
+vpc_name           = "vpn-network"
+subnet_name        = "vpn-subnet"
+subnet_cidr        = "192.168.10.0/24"
+
+# VPN Configuration
+vpn_gateway_name   = "vpn-to-contabo"
+vpn_pre_shared_key = "change-this-to-strong-random-key"
+
+# Contabo Configuration
+contabo_region     = "EU"
+contabo_image_id   = "ubuntu-20.04"
+
+# Storage for Terraform State
+state_bucket_name  = "my-company-terraform-state-vpn"
+lock_table_name    = "terraform-locks-vpn"
+
+# Tags
+environment        = "dev"
+project_name       = "vpn-infrastructure"
+team              = "devops"
