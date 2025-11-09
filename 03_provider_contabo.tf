@@ -6,3 +6,9 @@ provider "contabo" {
   oauth2_user          = var.contabo_user
   oauth2_pass          = var.contabo_password
 }
+
+# Data source для получения информации об образе ДО создания инстанса
+data "contabo_image" "selected" {
+  id = var.image_id
+  description = "Information about the selected OS image"
+}

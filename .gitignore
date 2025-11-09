@@ -5,6 +5,7 @@
 *.tfstate
 *.tfstate.*
 
+.config/
 
 .terraform.lock.hcl
 

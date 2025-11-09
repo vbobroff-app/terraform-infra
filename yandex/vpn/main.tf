@@ -7,6 +7,11 @@ resource "yandex_vpc_address" "vpn_gateway_ip" {
   external_ipv4_address {
     zone_id = var.zone
   }
+
+  # Явно указываем, что это статический IP
+  lifecycle {
+    prevent_destroy = false # Разрешить удаление при destroy
+  }
 }
 
 # Создание VPN Gateway (пробуем VPC Gateway)
