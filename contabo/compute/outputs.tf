@@ -1,4 +1,4 @@
-# contabo/compute/outputs.tf
+# ./contabo/compute/outputs.tf
 
 output "instance_info" {
   description = "Complete information about the created VPS instance"

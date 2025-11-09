@@ -1,43 +1,27 @@
 # terraform.tfvars.example
+# terraform.tfvars (реальный файл, в .gitignore)
 
-# Yandex Cloud Configuration in Organization
-#Cloud
-cloud_name    = "waw-name" 
-infra-cloud_id    = "b1gqmd9qufsg490ga43h"
+#Cloud in Organization
+cloud_name    = "your-cloud" 
+cloud_id    = "fjr9fffjGFD6mflvFs33"
 
 #Catalog
-catalog_name    = "catalog-waw-name"
-catalog_id   = "b1gj58ckj9gn47utmcsg"
+catalog_name    = "your-folder"
+catalog_id   = "efkds9fk45ldmj30fk9f"
 
 #zones
 zone_1_a      = "ru-central1-a"
 
 # Service Account for Terraform
 terraform_sa_name  = "terraform-sa"
-terraform_sa_id    = "aje6mbo47g6ofmpcm5q4"
+terraform_sa_id    = "fjkKHJK529ffjejd5jsl"
 
-# Service Account for Terraform
-terraform_sa_name  = "terraform-sa"
-terraform_sa_id    = "ajesaj123exampleid"
 
-# Network Configuration
-vpc_name           = "vpn-network"
-subnet_name        = "vpn-subnet"
-subnet_cidr        = "192.168.10.0/24"
+#Contabo
 
-# VPN Configuration
-vpn_gateway_name   = "vpn-to-contabo"
-vpn_pre_shared_key = "change-this-to-strong-random-key"
+image_id    = "afecbb85-e2fc-46f0-9684-b46b1faf00bb" # ubuntu-22.04 LTS
 
-# Contabo Configuration
-contabo_region     = "EU"
-contabo_image_id   = "ubuntu-20.04"
-
-# Storage for Terraform State
-state_bucket_name  = "my-company-terraform-state-vpn"
-lock_table_name    = "terraform-locks-vpn"
-
-# Tags
-environment        = "dev"
-project_name       = "vpn-infrastructure"
-team              = "devops"
+contabo_client_id     = "INT-12345678"
+contabo_client_secret = "fsdje9dkek3fsfj3k5sjl03ffj0fkj3g8sj"
+contabo_user          = "spv.public@gmail.com"
+contabo_password      = "fdsaf\A\E@;FDjs5k3"

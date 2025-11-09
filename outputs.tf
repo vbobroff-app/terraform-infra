@@ -39,22 +39,22 @@ output "security_group_id" {
 
 # Contabo
 
-output "image_info" {
-  description = "Information about the selected OS image"
-  value = {
-    id            = data.contabo_image.selected.id
-    description = data.contabo_image.selected.description
-    name          = data.contabo_image.selected.name
-    version       = data.contabo_image.selected.version
-    os_type       = data.contabo_image.selected.os_type
-    format        = data.contabo_image.selected.format
-    status        = data.contabo_image.selected.status
-    standard_image = data.contabo_image.selected.standard_image
-    creation_date = data.contabo_image.selected.creation_date
-    last_updated = data.contabo_image.selected.last_updated
-    uploaded_size_mb = data.contabo_image.selected.uploaded_size_mb
-  }
-}
+# output "image_info" {
+#   description = "Information about the selected OS image"
+#   value = {
+#     id            = data.contabo_image.selected.id
+#     description = data.contabo_image.selected.description
+#     name          = data.contabo_image.selected.name
+#     version       = data.contabo_image.selected.version
+#     os_type       = data.contabo_image.selected.os_type
+#     format        = data.contabo_image.selected.format
+#     status        = data.contabo_image.selected.status
+#     standard_image = data.contabo_image.selected.standard_image
+#     creation_date = data.contabo_image.selected.creation_date
+#     last_updated = data.contabo_image.selected.last_updated
+#     uploaded_size_mb = data.contabo_image.selected.uploaded_size_mb
+#   }
+# }
 
 # output "contabo_vps_ip" {
 #   description = "Public IP of Contabo VPS"
